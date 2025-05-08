@@ -4,7 +4,7 @@ menuToggle.addEventListener("click", () => {
   navbar.classList.toggle("show");
 });
 
-// Scroll to top button
+
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
