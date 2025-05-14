@@ -10,22 +10,44 @@ scroll-behavior: smooth;
 }
 
 header {
-background: #111;
-color: white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem 2rem;
-position: sticky;
-top: 0;
-z-index: 1000;
-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background: #111;
+    padding: 1rem 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 5px 7px rgb(15, 13, 82);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 header .logo {
 font-weight: 700;
-font-size: 1.3rem;
-letter-spacing: 1px;
+font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ffd700;
+    transition: width o.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 nav ul {
@@ -80,16 +102,19 @@ margin: auto;
 }
 
 .aboutMe {
-max-width: 800px;
-margin: 4rem auto;
-padding: 2rem 1.5rem;
-background: white;
-border-radius: 12px;
-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 4rem auto;
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 2px 10px 6px rgba(0, 0, 0, 0.758);
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .aboutMe h2 {
 font-size: 2rem;
+font-weight: 700;
 margin-bottom: 1rem;
 color: #111;
 }
@@ -139,7 +164,7 @@ transition: background 0.3s ease;
 }
 
 .skills-list div:hover {
-background-color: #6e6e6e;
+background-color: #c6c6c6;
 }
 
 section#projects h2 {
